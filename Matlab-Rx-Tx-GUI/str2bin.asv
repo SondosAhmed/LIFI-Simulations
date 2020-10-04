@@ -1,0 +1,6 @@
+function a=str2bin(char)
+bintext=dec2bin(double(char));
+[rp,cp]=size(bintext);
+a=dec2bin(double(char));
+a=str2num(reshape(bintext',1,rp*cp)');
+%a=str2num(reshape(bintext',1,rp*cp)');
